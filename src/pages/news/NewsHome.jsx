@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+// import { InterviewNotes } from "../../components/interview/InterviewNotes";
 import { PosgradesSeminaires } from "../../components/seminars/PosgradesSeminaires";
 
 const NewsContainer = styled.div`
@@ -18,6 +19,7 @@ const SeminaireWrapper = styled.div`
   justify-content: center;
   border: 1px solid var(--main-red-yellow);
   border-radius: 50px;
+  margin-bottom: 2rem;
   .titleSeminar {
     height: 2rem;
     cursor: pointer;
@@ -31,6 +33,11 @@ const newsOptions = [
     title: "Seminarios",
     children: <PosgradesSeminaires />
   }
+  // {
+  //   value: "interview",
+  //   title: "Entrevistas",
+  //   children: <InterviewNotes />
+  // }
 ];
 
 export const NewsHome = () => {
