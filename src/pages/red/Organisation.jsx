@@ -4,6 +4,7 @@ import anyPhoto from "../../../public/assets/memberPhotos/ana-julia-escobar.jpeg
 import kathyPhoto from "../../../public/assets/memberPhotos/katherine-morales.jpg";
 import majoPhoto from "../../../public/assets/memberPhotos/maria-castellano.jpeg";
 import eliPhoto from "../../../public/assets/memberPhotos/elizabeth-zuniga.jpeg";
+import viviPhoto from "../../../public/assets/memberPhotos/viviana-gavilanes.png";
 
 const OrganisationContainer = styled.div`
   min-height: 80vh;
@@ -112,7 +113,9 @@ export const Organisation = () => (
         <div>María José Castellano</div>
       </CardWrapper>
       <CardWrapper>
-        <span>FOTO</span>
+        <span>
+          <img src={viviPhoto} alt="vivi" />
+        </span>
         <div>
           <strong>Embajadoras</strong>
         </div>
