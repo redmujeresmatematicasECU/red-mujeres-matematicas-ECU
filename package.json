@@ -1,4 +1,5 @@
 {
+  "homepage": "http://redmujeresmatematicasECU.github.io/red-mujeres-matematicas-ECU",
   "name": "red-mujeres-ec-web",
   "version": "1.0.0",
   "description": "",
@@ -18,10 +19,13 @@
     "styled-components": "5.3.6"
   },
   "devDependencies": {
-    "@babel/runtime": "7.13.8"
+    "@babel/runtime": "7.13.8",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
