@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-import anyPhoto from "../../../public/assets/memberPhotos/ana-julia-escobar.jpeg";
-import kathyPhoto from "../../../public/assets/memberPhotos/katherine-morales.jpg";
-import majoPhoto from "../../../public/assets/memberPhotos/maria-castellano.jpeg";
-import eliPhoto from "../../../public/assets/memberPhotos/elizabeth-zuniga.jpeg";
-import viviPhoto from "../../../public/assets/memberPhotos/viviana-gavilanes.png";
+import anyPhoto from "../../assets/memberPhotos/ana-julia-escobar.jpeg";
+import kathyPhoto from "../../assets/memberPhotos/katherine-morales.jpg";
+import majoPhoto from "../../assets/memberPhotos/maria-castellano.jpeg";
+import eliPhoto from "../../assets/memberPhotos/elizabeth-zuniga.jpeg";
+import viviPhoto from "../../assets/memberPhotos/viviana-gavilanes.png";
 
 const OrganisationContainer = styled.div`
   min-height: 80vh;

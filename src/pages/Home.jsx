@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import portailFoto from "../../public/assets/photos/portada.png";
+import portailFoto from "../assets/photos/portada.png";
 
 const HomeWrapper = styled.div`
   min-height: 80vh;

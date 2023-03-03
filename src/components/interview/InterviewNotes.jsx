@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import mexico from "../../../public/assets/flags/mexico.png";
-import argentina from "../../../public/assets/flags/argentina.png";
-import paisesBajos from "../../../public/assets/flags/paisesBajos.png";
+import mexico from "../../assets/flags/mexico.png";
+import argentina from "../../assets/flags/argentina.png";
+import paisesBajos from "../../assets/flags/paisesBajos.png";
 
 const InterviewContainer = styled.ul`
   background: var(--main-red-blue);
