@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-import alemania from "../../../public/assets/flags/alemania.png";
-import belgica from "../../../public/assets/flags/belgica.png";
-import canada from "../../../public/assets/flags/canada.png";
-import chile from "../../../public/assets/flags/chile.png";
-import ecuador from "../../../public/assets/flags/ecuador.png";
-import espana from "../../../public/assets/flags/espana.png";
-import francia from "../../../public/assets/flags/francia.png";
-import usa from "../../../public/assets/flags/usa.png";
+import alemania from "../../assets/flags/alemania.png";
+import belgica from "../../assets/flags/belgica.png";
+import canada from "../../assets/flags/canada.png";
+import chile from "../../assets/flags/chile.png";
+import ecuador from "../../assets/flags/ecuador.png";
+import espana from "../../assets/flags/espana.png";
+import francia from "../../assets/flags/francia.png";
+import usa from "../../assets/flags/usa.png";
 
 const SeminarContainer = styled.div`
   background: var(--main-red-blue);

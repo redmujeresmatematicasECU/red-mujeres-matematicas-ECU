@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logoRed from "../../public/assets/logos/LOGO_Red.png";
+import logoRed from "../assets/logos/LOGO_Red.png";
 
 const menuItems = [
   { title: "Inicio", url: "/" },

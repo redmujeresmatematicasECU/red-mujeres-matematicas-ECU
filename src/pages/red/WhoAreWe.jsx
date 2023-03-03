@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import papel from "../../../public/assets/photos/papel_clara.png";
+import papel from "../../assets/photos/papel_clara.png";
 
 const WhoAreWeContainer = styled.div`
   background-image: url(${papel});
