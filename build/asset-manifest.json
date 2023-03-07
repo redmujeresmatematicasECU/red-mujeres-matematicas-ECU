@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/red-mujeres-matematicas-ECU/static/css/main.81494855.chunk.css",
+    "main.js": "/red-mujeres-matematicas-ECU/static/js/main.4cedc918.chunk.js",
+    "main.js.map": "/red-mujeres-matematicas-ECU/static/js/main.4cedc918.chunk.js.map",
+    "runtime-main.js": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js",
+    "runtime-main.js.map": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js.map",
+    "static/js/2.25d1291e.chunk.js": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js",
+    "static/js/2.25d1291e.chunk.js.map": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js.map",
+    "index.html": "/red-mujeres-matematicas-ECU/index.html",
+    "static/css/main.81494855.chunk.css.map": "/red-mujeres-matematicas-ECU/static/css/main.81494855.chunk.css.map",
+    "static/js/2.25d1291e.chunk.js.LICENSE.txt": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js.LICENSE.txt",
+    "static/media/LOGO_Red.38b8c898.png": "/red-mujeres-matematicas-ECU/static/media/LOGO_Red.38b8c898.png",
+    "static/media/ana-julia-escobar.fe397688.jpeg": "/red-mujeres-matematicas-ECU/static/media/ana-julia-escobar.fe397688.jpeg",
+    "static/media/elizabeth-zuniga.0b40ce72.jpeg": "/red-mujeres-matematicas-ECU/static/media/elizabeth-zuniga.0b40ce72.jpeg",
+    "static/media/katherine-morales.ca3f2e2f.jpg": "/red-mujeres-matematicas-ECU/static/media/katherine-morales.ca3f2e2f.jpg",
+    "static/media/maria-castellano.afc61ddb.jpeg": "/red-mujeres-matematicas-ECU/static/media/maria-castellano.afc61ddb.jpeg",
+    "static/media/papel_clara.f70223f9.png": "/red-mujeres-matematicas-ECU/static/media/papel_clara.f70223f9.png",
+    "static/media/portada.8d86cc5f.png": "/red-mujeres-matematicas-ECU/static/media/portada.8d86cc5f.png",
+    "static/media/viviana-gavilanes.487e45b8.png": "/red-mujeres-matematicas-ECU/static/media/viviana-gavilanes.487e45b8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0751959e.js",
+    "static/js/2.25d1291e.chunk.js",
+    "static/css/main.81494855.chunk.css",
+    "static/js/main.4cedc918.chunk.js"
+  ]
+}

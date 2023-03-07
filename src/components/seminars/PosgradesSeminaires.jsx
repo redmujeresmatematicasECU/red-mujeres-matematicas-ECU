@@ -26,6 +26,14 @@ const CardInfoWrapper = styled.div`
     font-size: 20px;
     font-weight: 600;
   }
+  img {
+    width: 270px;
+    height: 180px;
+  }
+  a {
+    color: var(--main-red-yellow);
+    text-decoration: none;
+  }
 `;
 
 export const PosgradesSeminaires = () => {
