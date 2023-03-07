@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/red-mujeres-matematicas-ECU/static/css/main.81494855.chunk.css",
-    "main.js": "/red-mujeres-matematicas-ECU/static/js/main.4cedc918.chunk.js",
-    "main.js.map": "/red-mujeres-matematicas-ECU/static/js/main.4cedc918.chunk.js.map",
+    "main.js": "/red-mujeres-matematicas-ECU/static/js/main.9ad3c007.chunk.js",
+    "main.js.map": "/red-mujeres-matematicas-ECU/static/js/main.9ad3c007.chunk.js.map",
     "runtime-main.js": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js",
     "runtime-main.js.map": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js.map",
-    "static/js/2.25d1291e.chunk.js": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js",
-    "static/js/2.25d1291e.chunk.js.map": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js.map",
+    "static/js/2.307084d6.chunk.js": "/red-mujeres-matematicas-ECU/static/js/2.307084d6.chunk.js",
+    "static/js/2.307084d6.chunk.js.map": "/red-mujeres-matematicas-ECU/static/js/2.307084d6.chunk.js.map",
     "index.html": "/red-mujeres-matematicas-ECU/index.html",
     "static/css/main.81494855.chunk.css.map": "/red-mujeres-matematicas-ECU/static/css/main.81494855.chunk.css.map",
-    "static/js/2.25d1291e.chunk.js.LICENSE.txt": "/red-mujeres-matematicas-ECU/static/js/2.25d1291e.chunk.js.LICENSE.txt",
+    "static/js/2.307084d6.chunk.js.LICENSE.txt": "/red-mujeres-matematicas-ECU/static/js/2.307084d6.chunk.js.LICENSE.txt",
     "static/media/LOGO_Red.38b8c898.png": "/red-mujeres-matematicas-ECU/static/media/LOGO_Red.38b8c898.png",
     "static/media/ana-julia-escobar.fe397688.jpeg": "/red-mujeres-matematicas-ECU/static/media/ana-julia-escobar.fe397688.jpeg",
     "static/media/elizabeth-zuniga.0b40ce72.jpeg": "/red-mujeres-matematicas-ECU/static/media/elizabeth-zuniga.0b40ce72.jpeg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0751959e.js",
-    "static/js/2.25d1291e.chunk.js",
+    "static/js/2.307084d6.chunk.js",
     "static/css/main.81494855.chunk.css",
-    "static/js/main.4cedc918.chunk.js"
+    "static/js/main.9ad3c007.chunk.js"
   ]
 }
