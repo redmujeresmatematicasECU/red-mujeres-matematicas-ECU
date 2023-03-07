@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import styled from "styled-components";
 // import { InterviewNotes } from "../../components/interview/InterviewNotes";
@@ -31,11 +32,13 @@ const newsOptions = [
   {
     value: "seminaires",
     title: "Seminarios",
+    icon: "fa-folder-open",
     children: <PosgradesSeminaires />
-  }
+  },
   // {
   //   value: "interview",
   //   title: "Entrevistas",
+  //   icon: "fa-file-pdf",
   //   children: <InterviewNotes />
   // }
 ];
@@ -48,7 +51,8 @@ export const NewsHome = () => {
       {newsOptions.map((news, idx) => (
         <SeminaireWrapper key={idx}>
           <div className="titleSeminar" onClick={() => setSubPage(news.value)}>
-            {news.title}
+            <FontAwesomeIcon icon={news.icon} size="xl" /> {' '}
+            <strong>{news.title}</strong>
           </div>
           {subPage === news.value && news.children}
         </SeminaireWrapper>

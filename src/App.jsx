@@ -22,6 +22,7 @@ export default function App() {
       </header>
       <div className="main">
         <Routes>
+          <Route element={<Home />} path="/red-mujeres-matematicas-ECU" />
           <Route element={<Home />} path="/" />
           <Route element={<RedInformation />} path="/red" />
           <Route element={<Nodes />} path="/nodos" />
