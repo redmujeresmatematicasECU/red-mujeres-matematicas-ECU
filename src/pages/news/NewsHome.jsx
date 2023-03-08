@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import styled from "styled-components";
-// import { InterviewNotes } from "../../components/interview/InterviewNotes";
+import { InterviewNotes } from "../../components/interview/InterviewNotes";
 import { PosgradesSeminaires } from "../../components/seminars/PosgradesSeminaires";
 
 const NewsContainer = styled.div`
@@ -21,6 +21,8 @@ const SeminaireWrapper = styled.div`
   border: 1px solid var(--main-red-yellow);
   border-radius: 50px;
   margin-bottom: 2rem;
+  width: fit-content;
+  padding: 1rem 4rem;
   .titleSeminar {
     height: 2rem;
     cursor: pointer;
@@ -35,12 +37,12 @@ const newsOptions = [
     icon: "fa-folder-open",
     children: <PosgradesSeminaires />
   },
-  // {
-  //   value: "interview",
-  //   title: "Entrevistas",
-  //   icon: "fa-file-pdf",
-  //   children: <InterviewNotes />
-  // }
+  {
+    value: "interview",
+    title: "Entrevistas",
+    icon: "fa-file-pdf",
+    children: <InterviewNotes />
+  }
 ];
 
 export const NewsHome = () => {

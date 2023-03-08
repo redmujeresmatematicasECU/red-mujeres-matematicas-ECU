@@ -12,21 +12,28 @@ const InterviewContainer = styled.ul`
   img {
     width: 1.5rem;
   }
+  a {
+    color: var(--main-red-yellow);
+    text-decoration: none;
+  }
 `;
 
 const womanList = [
   {
     name: "Selene Casas",
-    flag: <img src={mexico} alt="mexico" />
+    flag: <img src={mexico} alt="mexico" />,
+    ref: "https://drive.google.com/uc?export=download&id=15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv",
   },
-  {
-    name: "María Eugenia Martínez",
-    flag: <img src={argentina} alt="argentina" />
-  },
-  {
-    name: "Maria Vlasiu",
-    flag: <img src={paisesBajos} alt="paisesBajos" />
-  }
+  // {
+  //   name: "Maria Vlasiu",
+  //   flag: <img src={paisesBajos} alt="paisesBajos" />,
+  //   ref: "https://drive.google.com/uc?export=download&id=1EBtBIV_rGAv6rK7gH3TldEMpnsA4TEop",
+  // },
+  // {
+  //   name: "María Eugenia Martínez",
+  //   flag: <img src={argentina} alt="argentina" />,
+  //   ref: "",
+  // },
 ];
 
 export const InterviewNotes = () => {
@@ -35,7 +42,7 @@ export const InterviewNotes = () => {
       {womanList.map((item, idx) => (
         <li key={idx}>
           <div>
-            {item.name} {item.flag}
+            <a href={item.ref}>{item.name}</a> {item.flag}
           </div>
         </li>
       ))}
