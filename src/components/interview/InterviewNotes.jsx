@@ -22,7 +22,7 @@ const womanList = [
   {
     name: "Selene Casas",
     flag: <img src={mexico} alt="mexico" />,
-    ref: "https://drive.google.com/uc?export=download&id=15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv",
+    ref: "https://drive.google.com/file/d/15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv/view?usp=share_link",
   },
   // {
   //   name: "Maria Vlasiu",
