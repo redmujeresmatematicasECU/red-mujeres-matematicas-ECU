@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/red-mujeres-matematicas-ECU/static/css/main.81494855.chunk.css",
-    "main.js": "/red-mujeres-matematicas-ECU/static/js/main.ef83e9ef.chunk.js",
-    "main.js.map": "/red-mujeres-matematicas-ECU/static/js/main.ef83e9ef.chunk.js.map",
+    "main.js": "/red-mujeres-matematicas-ECU/static/js/main.fd37ae28.chunk.js",
+    "main.js.map": "/red-mujeres-matematicas-ECU/static/js/main.fd37ae28.chunk.js.map",
     "runtime-main.js": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js",
     "runtime-main.js.map": "/red-mujeres-matematicas-ECU/static/js/runtime-main.0751959e.js.map",
     "static/js/2.307084d6.chunk.js": "/red-mujeres-matematicas-ECU/static/js/2.307084d6.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.0751959e.js",
     "static/js/2.307084d6.chunk.js",
     "static/css/main.81494855.chunk.css",
-    "static/js/main.ef83e9ef.chunk.js"
+    "static/js/main.fd37ae28.chunk.js"
   ]
 }
