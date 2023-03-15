@@ -24,11 +24,11 @@ const womanList = [
     flag: <img src={mexico} alt="mexico" />,
     ref: "https://drive.google.com/file/d/15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv/view?usp=share_link",
   },
-  // {
-  //   name: "Maria Vlasiu",
-  //   flag: <img src={paisesBajos} alt="paisesBajos" />,
-  //   ref: "https://drive.google.com/uc?export=download&id=1EBtBIV_rGAv6rK7gH3TldEMpnsA4TEop",
-  // },
+  {
+    name: "Maria Vlasiu",
+    flag: <img src={paisesBajos} alt="paisesBajos" />,
+    ref: "https://drive.google.com/file/d/1EBtBIV_rGAv6rK7gH3TldEMpnsA4TEop/view?usp=share_link",
+  },
   // {
   //   name: "María Eugenia Martínez",
   //   flag: <img src={argentina} alt="argentina" />,
@@ -42,7 +42,7 @@ export const InterviewNotes = () => {
       {womanList.map((item, idx) => (
         <li key={idx}>
           <div>
-            <a href={item.ref}>{item.name}</a> {item.flag}
+            <a href={item.ref} target="_blank">{item.name}</a> {item.flag}
           </div>
         </li>
       ))}
