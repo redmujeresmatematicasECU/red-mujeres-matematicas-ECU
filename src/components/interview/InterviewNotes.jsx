@@ -25,7 +25,7 @@ const womanList = [
     ref: "https://drive.google.com/file/d/15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv/view?usp=share_link",
   },
   {
-    name: "Maria Vlasiu",
+    name: "Maria Vlasiou",
     flag: <img src={paisesBajos} alt="paisesBajos" />,
     ref: "https://drive.google.com/file/d/1EBtBIV_rGAv6rK7gH3TldEMpnsA4TEop/view?usp=share_link",
   },
