@@ -40,6 +40,11 @@ const womanList = [
     flag: <img src={peru} alt="peru" />,
     ref: "https://drive.google.com/file/d/1P3Zk1d2gQPB42gvd0DiDoDmiSg1DKTpr/view?usp=sharing",
   },
+  {
+    name: "Mucuy-kak Guevara Aguirre",
+    flag: <img src={mexico} alt="mexico" />,
+    ref: "https://drive.google.com/file/d/1RRunq55xXQjd6Lb692zgaGWxYsDVu509/view?usp=share_link",
+  },
 ];
 
 export const InterviewNotes = () => {
