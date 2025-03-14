@@ -45,6 +45,12 @@ const womanList = [
     flag: <img src={mexico} alt="mexico" />,
     ref: "https://drive.google.com/file/d/1RRunq55xXQjd6Lb692zgaGWxYsDVu509/view?usp=share_link",
   },
+  {
+    name: "Casandra Mejía Leal",
+    flag: <img src={mexico} alt="mexico" />,
+    ref:
+      "https://drive.google.com/file/d/1hmNrXBYLP2Yihui5DJ1S2FMhIAa26aOD/view?usp=share_link"
+  }
 ];
 
 export const InterviewNotes = () => {

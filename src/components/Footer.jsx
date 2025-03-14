@@ -27,7 +27,6 @@ export const Footer = () => (
       <div>Redes Sociales</div>
       <div>
         <FontAwesomeIcon icon={["fab", "facebook"]} size="xl" />
-        <FontAwesomeIcon icon={["fab", "twitter"]} size="xl" />
         <div>@RMMathEC</div>
       </div>
     </div>
