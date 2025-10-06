@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterContainer = styled.div`
-  background: var(--main-red-blue);
   display: flex;
   flex-direction: row;
+  color: #f4ebd0;
   padding: 2rem 2rem;
   gap: 3rem;
   div {
@@ -21,20 +21,25 @@ const FooterContainer = styled.div`
   }
 `;
 
+const OutsideLink = styled.a`
+  color: #f4ebd0;
+  cursor: pointer;
+`;
+
 export const Footer = () => (
   <FooterContainer>
     <div>
       <div>Redes Sociales</div>
       <div>
         <FontAwesomeIcon icon={["fab", "facebook"]} size="xl" />
-        <div>@RMMathEC</div>
+        <OutsideLink href="https://facebook.com/RMMathEC">@RMMathEC</OutsideLink>
       </div>
     </div>
     <div>
       <div>Contáctanos</div>
       <div>
         <FontAwesomeIcon icon="fa-envelope" size="xl" />
-        <div>redmujeresmatematicas.ec@gmail.com</div>
+        <OutsideLink href="mailto:redmujeresmatematicas.ec@gmail.com">redmujeresmatematicas.ec@gmail.com</OutsideLink>
       </div>
     </div>
   </FooterContainer>

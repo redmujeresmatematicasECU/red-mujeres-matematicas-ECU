@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import logoRed from "../assets/logos/LOGO_Red.png";
 
@@ -10,10 +10,10 @@ const menuItems = [
 ];
 
 const Nav = styled.nav`
-  background: var(--main-red-blue);
   display: flex;
   img {
     max-height: 5rem;
+    cursor: pointer;
   }
   ul {
     display: flex;
@@ -31,11 +31,13 @@ const Nav = styled.nav`
 `;
 
 export const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <Nav>
       <ul>
         <li>
-          <img src={logoRed} alt="Logo-Red" />
+          <img src={logoRed} alt="Logo-Red" onClick={() => navigate('/')}/>
         </li>
         {menuItems.map((item, idx) => (
           <li key={idx}>
