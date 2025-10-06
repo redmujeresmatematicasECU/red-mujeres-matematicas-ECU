@@ -1,0 +1,2 @@
+.App{display:flex;flex-direction:column;text-align:left;font-size:1rem;line-height:1.5rem;height:100vh}:root{--main-red-blue:#22a7a2;--main-red-yellow:#fdc75c;font-family:"Segoe UI",Roboto,sans-serif}body{margin:0;padding:0}footer,header{padding:.5rem;background-color:#22a7a2;background-color:var(--main-red-blue)}h1{font-size:2rem}main{flex:1 1;overflow-y:auto}.fb-icon{color:#3b5998}.twitter-icon{color:#1da1f2}.check-icon{color:#fdc75c;color:var(--main-red-yellow)}
+/*# sourceMappingURL=main.d7a7b96d.chunk.css.map */
