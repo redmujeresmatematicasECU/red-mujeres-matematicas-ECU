@@ -20,7 +20,7 @@ export default function App() {
       <header>
         <Header />
       </header>
-      <div className="main">
+      <main>
         <Routes>
           <Route element={<Home />} path="/red-mujeres-matematicas-ECU" />
           <Route element={<Home />} path="/" />
@@ -28,7 +28,7 @@ export default function App() {
           <Route element={<Nodes />} path="/nodos" />
           <Route element={<NewsHome />} path="/noticias" />
         </Routes>
-      </div>
+      </main>
       <footer>
         <Footer />
       </footer>

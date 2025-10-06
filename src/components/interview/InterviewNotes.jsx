@@ -1,68 +1,61 @@
 import styled from "styled-components";
-import mexico from "../../assets/flags/mexico.png";
-import argentina from "../../assets/flags/argentina.png";
-import paisesBajos from "../../assets/flags/paisesBajos.png";
-import peru from "../../assets/flags/peru.png";
+import { interviewList } from "../../data/interviewData";
 
-const InterviewContainer = styled.ul`
-  background: var(--main-red-blue);
+const InterviewContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  line-height: 1.5rem;
-  img {
-    width: 1.5rem;
-  }
-  a {
-    color: var(--main-red-yellow);
-    text-decoration: none;
-  }
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 3rem;
+  background: var(--main-red-blue);
 `;
 
-const womanList = [
-  {
-    name: "Selene Casas",
-    flag: <img src={mexico} alt="mexico" />,
-    ref: "https://drive.google.com/file/d/15yczP5-E8S6nLXA3CG_OuGE_JkDqcpNv/view?usp=share_link",
-  },
-  {
-    name: "Maria Vlasiou",
-    flag: <img src={paisesBajos} alt="paisesBajos" />,
-    ref: "https://drive.google.com/file/d/1EBtBIV_rGAv6rK7gH3TldEMpnsA4TEop/view?usp=share_link",
-  },
-  {
-    name: "María Eugenia Martínez",
-    flag: <img src={argentina} alt="argentina" />,
-    ref: "https://drive.google.com/file/d/1xIPxHicBsrx797wealGYO27zEN85aOOJ/view?usp=share_link",
-  },
-  {
-    name: "Roxana López",
-    flag: <img src={peru} alt="peru" />,
-    ref: "https://drive.google.com/file/d/1P3Zk1d2gQPB42gvd0DiDoDmiSg1DKTpr/view?usp=sharing",
-  },
-  {
-    name: "Mucuy-kak Guevara Aguirre",
-    flag: <img src={mexico} alt="mexico" />,
-    ref: "https://drive.google.com/file/d/1RRunq55xXQjd6Lb692zgaGWxYsDVu509/view?usp=share_link",
-  },
-  {
-    name: "Casandra Mejía Leal",
-    flag: <img src={mexico} alt="mexico" />,
-    ref:
-      "https://drive.google.com/file/d/1hmNrXBYLP2Yihui5DJ1S2FMhIAa26aOD/view?usp=share_link"
+const InterviewCard = styled.div`
+  width: 20vw;
+  border: 1px solid var(--main-red-yellow);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   }
-];
+
+  img {
+    width: 2rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+  }
+
+  a {
+    display: block;
+    color: var(--main-red-yellow);
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 0.5rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
 
 export const InterviewNotes = () => {
   return (
     <InterviewContainer>
-      {womanList.map((item, idx) => (
-        <li key={idx}>
-          <div>
-            <a href={item.ref} target="_blank">{item.name}</a> {item.flag}
-          </div>
-        </li>
+      {interviewList.map((item, idx) => (
+        <InterviewCard key={idx}>
+          <a href={item.link} target="_blank" rel="noreferrer">
+            {item.name}
+          </a>
+          <img src={item.flag} alt={`flag-${item.name}`} />
+        </InterviewCard>
       ))}
     </InterviewContainer>
   );
 };
+

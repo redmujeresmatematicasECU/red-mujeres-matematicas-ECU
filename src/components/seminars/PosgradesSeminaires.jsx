@@ -1,189 +1,69 @@
 import styled from "styled-components";
-
-import alemania from "../../assets/flags/alemania.png";
-import belgica from "../../assets/flags/belgica.png";
-import canada from "../../assets/flags/canada.png";
-import chile from "../../assets/flags/chile.png";
-import ecuador from "../../assets/flags/ecuador.png";
-import espana from "../../assets/flags/espana.png";
-import francia from "../../assets/flags/francia.png";
-import usa from "../../assets/flags/usa.png";
+import { seminarsData } from "../../data/posgradesData";
 
 const SeminarContainer = styled.div`
-  background: var(--main-red-blue);
   display: flex;
-  justify-content: center;
-  gap: 10px;
   flex-wrap: wrap;
-  padding: 0 3rem;
+  gap: 2rem;
+  padding: 3rem;
+  justify-items: center;
 `;
 
 const CardInfoWrapper = styled.div`
-  width: 20rem;
-  div:first-child {
-    text-align: center;
-    margin: 1rem;
-    font-size: 20px;
-    font-weight: 600;
+  border: 1px solid var(--main-red-yellow);
+  border-radius: 1rem;
+  width: 30vw;
+  max-width: 280px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   }
+
   img {
-    width: 270px;
-    height: 180px;
+    width: 100%;
+    height: 160px;
+    border-radius: 0.5rem;
+    object-fit: cover;
   }
-  a {
+
+  h4 {
     color: var(--main-red-yellow);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: white;
     text-decoration: none;
+    display: block;
+    margin-bottom: 0.3rem;
+    &:hover {
+      color: var(--main-red-yellow);
+      text-decoration: underline;
+    }
   }
 `;
+
 
 export const PosgradesSeminaires = () => {
   return (
     <SeminarContainer>
-      <CardInfoWrapper>
-        <div>Francia</div>
-        <div>
-          <img src={francia} alt="Francia" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1d2xupnDKaaWAUvqUfL4bRdZa6F7Y_H7o">
-                Maestrías: Viviana Gavilanes
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1HvrG1lej5r0k710cq2wl7QYPmJOQyfty">
-                Doctorados: Katherine Morales
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Alemania</div>
-        <div>
-          <img src={alemania} alt="Alemania" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1TK7RzjgxsESTrTR4PJ7N2gH0pBvQ6PDO">
-                Doctorados: Maribel Montenegro
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1jPQIGhJ1vSBR1aypEyNnjQrcZvokPdTh">
-                Doctorados: Jorge Luis Chicaiza
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Estados Unidos</div>
-        <div>
-          <img src={usa} alt="usa" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1lp_wAipdkn5QkWhE8HUZUC1RFjcDyEwt">
-                Doctorados: Roberto Torres
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Chile</div>
-        <div>
-          <img src={chile} alt="Chile" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1Qy2oCIbsN62V4OUkVbtWdNfKx_oezHWM">
-                Maestrías: Carlos Ajila
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1mra5hSN54BuaQ1mj15oJ5aWfrIbJ5Cb7">
-                Doctorados: Cristian Núñez
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Canada</div>
-        <div>
-          <img src={canada} alt="Canada" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1AkFh6H30P1TzfO53p33i9VCwdCMwB1HE">
-                Doctorados: Leonardo Montoya
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Bélgica</div>
-        <div>
-          <img src={belgica} alt="Belgica" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1JBHnmF09OVy41IkHDRtXwdMGSarhLUib">
-                Maestrías - Doctorados: Andrea García
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>Ecuador</div>
-        <div>
-          <img src={ecuador} alt="Ecuador" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1beKKPk5azJn5pWCeJPVyebkd7myBE84B">
-                Maestrías: Paola Quiloango
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1KHcB_nhu2HOfwtqGe7SwCpzV9dpEWQhL">
-                Doctorados: Paula Castro
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
-      <CardInfoWrapper>
-        <div>España</div>
-        <div>
-          <img src={espana} alt="Espana" />
-        </div>
-        <div>
-          <ul>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=11Er0M4NJwVz6lPYQPJbGjzG71Hx5HGXu">
-                Maestrías: Alex Pérez
-              </a>
-            </li>
-            <li>
-              <a href="https://drive.google.com/uc?export=download&id=1CPXemVX3CZXLUt2N4THkAY3Xj-vBN_ro">
-                Maestrías - Doctorados: Miguel Flores
-              </a>
-            </li>
-          </ul>
-        </div>
-      </CardInfoWrapper>
+      {seminarsData.map((item, idx) => (
+        <CardInfoWrapper key={idx}>
+          <img src={item.flag} alt={item.country} />
+          <h4>{item.country}</h4>
+          {item.programs.map((prog, i) => (
+            <a key={i} href={prog.link} target="_blank" rel="noreferrer">
+              {prog.title}
+            </a>
+          ))}
+        </CardInfoWrapper>
+      ))}
     </SeminarContainer>
   );
 };

@@ -1,126 +1,135 @@
 import styled from "styled-components";
-
 import anyPhoto from "../../assets/memberPhotos/ana-julia-escobar.jpeg";
 import kathyPhoto from "../../assets/memberPhotos/katherine-morales.jpg";
 import majoPhoto from "../../assets/memberPhotos/maria-castellano.jpeg";
 import eliPhoto from "../../assets/memberPhotos/elizabeth-zuniga.jpeg";
 import viviPhoto from "../../assets/memberPhotos/viviana-gavilanes.png";
 
-const OrganisationContainer = styled.div`
-  min-height: 80vh;
-  background: var(--main-red-blue);
+const OrganisationContainer = styled.section`
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 5rem;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: #f4ebd0;
+`;
+
+const Title = styled.h2`
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #f4ebd0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+`;
+
+const Paragraph = styled.p`
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
 `;
 
 const DirectiveContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
 `;
 
-const CardWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  div {
-    color: var(--main-red-yellow);
-    strong {
-      color: white;
-    }
+const Card = styled.div`
+  background-color: #14615F;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 220px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+
+  &:hover {
+    background-color: #1C8784;
+    transform: translateY(-6px);
   }
+
   img {
-    width: 10rem;
-    border-radius: 50px;
-    height: 11.5rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #f4ebd0;
+  }
+
+  strong {
+    display: block;
+    color: #ffe08a;
+    margin-bottom: 0.3rem;
+  }
+
+  div {
+    color: #f4ebd0;
+    font-size: 1rem;
+    font-weight: 500;
   }
 `;
 
 export const Organisation = () => (
   <OrganisationContainer>
-    <p>
-      La Directiva Provisional como previsto en la segunda disposición
-      transitoria del Capítulo VII (Estatutos) estará conformada por:
-    </p>
+    <Paragraph>
+      La Directiva Provisional, como previsto en la segunda disposición
+      transitoria del Capítulo VII (Estatutos), estará conformada por:
+    </Paragraph>
 
-    <h3>Directiva:</h3>
+    <Title>Directiva</Title>
     <DirectiveContainer>
-      <CardWrapper>
-        <span>
-          <img src={eliPhoto} alt="eli" />
-        </span>
-        <div>
-          <strong>Presidenta</strong>
-        </div>
+      <Card>
+        <img src={eliPhoto} alt="eli" />
+        <strong>Presidenta</strong>
         <div>Elizabeth Zúñiga</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={anyPhoto} alt="any" />
-        </span>
-        <div>
-          <strong>Secretaria general</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={anyPhoto} alt="any" />
+        <strong>Secretaria General</strong>
         <div>Ana Julia Escobar</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={kathyPhoto} alt="kathy" />
-        </span>
-        <div>
-          <strong>Tesorera</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={kathyPhoto} alt="kathy" />
+        <strong>Tesorera</strong>
         <div>Katherine Morales</div>
-      </CardWrapper>
+      </Card>
     </DirectiveContainer>
-    <h3>Representantes de cada nodo:</h3>
+
+    <Title>Representantes de cada nodo</Title>
     <DirectiveContainer>
-      <CardWrapper>
-        <span>
-          <img src={eliPhoto} alt="eli" />
-        </span>
-        <div>
-          <strong>Academia e Investigación</strong>
-        </div>
+      <Card>
+        <img src={eliPhoto} alt="eli" />
+        <strong>Academia e Investigación</strong>
         <div>Elizabeth Zúñiga</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={kathyPhoto} alt="kathy" />
-        </span>
-        <div>
-          <strong>Industria</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={kathyPhoto} alt="kathy" />
+        <strong>Industria</strong>
         <div>Katherine Morales</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={anyPhoto} alt="any" />
-        </span>
-        <div>
-          <strong>Divulgación</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={anyPhoto} alt="any" />
+        <strong>Divulgación</strong>
         <div>Ana Julia Escobar</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={majoPhoto} alt="majo" />
-        </span>
-        <div>
-          <strong>Sembrar Futuro</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={majoPhoto} alt="majo" />
+        <strong>Sembrar Futuro</strong>
         <div>María José Castellano</div>
-      </CardWrapper>
-      <CardWrapper>
-        <span>
-          <img src={viviPhoto} alt="vivi" />
-        </span>
-        <div>
-          <strong>Embajadoras</strong>
-        </div>
+      </Card>
+      <Card>
+        <img src={viviPhoto} alt="vivi" />
+        <strong>Embajadoras</strong>
         <div>Viviana Gavilanes</div>
-      </CardWrapper>
+      </Card>
     </DirectiveContainer>
   </OrganisationContainer>
 );

@@ -9,55 +9,92 @@ const NewsContainer = styled.div`
   background: var(--main-red-blue);
   display: flex;
   flex-direction: column;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 3rem 5rem;
+  color: #f4ebd0;
 `;
 
-const SeminaireWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--main-red-yellow);
-  border-radius: 50px;
-  margin-bottom: 2rem;
-  width: fit-content;
-  padding: 1rem 4rem;
-  .titleSeminar {
-    height: 2rem;
-    cursor: pointer;
-    padding-top: 1rem;
+const SectionWrapper = styled.div`
+  background: var(--main-red-blue);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  border-bottom: 3px solid var(--main-red-yellow);
+
+  &:last-child {
+    border-bottom: none;
   }
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+`;
+
+const SectionHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .dropdowIcon {
+    color: var(--main-red-yellow);
+    transition: transform 0.3s ease;
+    transform: ${({ open }) => (open ? "rotate(180deg)" : "rotate(0deg)")};
+  }
+`;
+
+const SectionContent = styled.div`
+  max-height: ${({ open }) => (open ? "2000px" : "0")};
+  transition: max-height 0.6s ease, padding 0.4s ease;
+  padding: ${({ open }) => (open ? "1.5rem 2rem" : "0 2rem")};
 `;
 
 const newsOptions = [
   {
     value: "seminaires",
     title: "Seminarios",
-    icon: "fa-folder-open",
+    icon: "fa-chalkboard-teacher",
     children: <PosgradesSeminaires />
   },
   {
     value: "interview",
     title: "Entrevistas",
-    icon: "fa-file-pdf",
+    icon: "fa-comments",
     children: <InterviewNotes />
   }
 ];
 
 export const NewsHome = () => {
-  const [subPage, setSubPage] = useState();
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (value) => {
+    setOpenSection(openSection === value ? null : value);
+  };
 
   return (
     <NewsContainer>
       {newsOptions.map((news, idx) => (
-        <SeminaireWrapper key={idx}>
-          <div className="titleSeminar" onClick={() => setSubPage(news.value)}>
-            <FontAwesomeIcon icon={news.icon} size="xl" /> {' '}
-            <strong>{news.title}</strong>
-          </div>
-          {subPage === news.value && news.children}
-        </SeminaireWrapper>
+        <SectionWrapper key={idx}>
+          <SectionHeader
+            open={openSection === news.value}
+            onClick={() => toggleSection(news.value)}
+          >
+            <div>
+              <FontAwesomeIcon icon={news.icon} /> {news.title}
+            </div>
+            <FontAwesomeIcon className="dropdowIcon" icon="fa-chevron-down" open={openSection === news.value} />
+          </SectionHeader>
+          <SectionContent open={openSection === news.value}>
+            {news.children}
+          </SectionContent>
+        </SectionWrapper>
       ))}
     </NewsContainer>
   );
